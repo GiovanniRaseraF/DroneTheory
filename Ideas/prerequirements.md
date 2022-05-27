@@ -7,4 +7,5 @@
 
 # Arm ToolChain 
 - File possibile per caricare la toolchain di arm [ToolChain](https://gist.github.com/ryankurte/bab66362f0c23d3a1916)
+- Far funzionare la toolchain ed il download di essa 
   
