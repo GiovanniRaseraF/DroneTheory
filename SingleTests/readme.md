@@ -1,4 +1,4 @@
-# Test singoli dei singoli componenti Harware e Software
+# Test dei singoli componenti Harware e Software
 
 ## CITest
 - Test relativi a CI 
