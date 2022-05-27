@@ -29,7 +29,7 @@
   - Importante dare credito ai lavori a cui si fa riferimento 
 
 - Codice 
-  - Deve essere scelto e rispettato un coding style (Utilizzare quello di INAV: [Coding Style](https://github.com/multiwii/baseflight/wiki/CodingStyle))
+  - Deve essere scelto e rispettato un coding style (Utilizzare quello di INAV: [Coding Style](../Styles/codingstyle.md))
   - Deve essere creato lo schema che spiega l'interazione tra le classi e le funzioni implementate
   - Il codice deve essere più semplice possibile, se non è possibile deve essere spiegato tramite commenti
   - Ogni funzione deve essere documentata nella wiki del progetto
