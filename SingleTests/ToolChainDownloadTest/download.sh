@@ -11,7 +11,7 @@
 
 # Toolchain base string
 # Set this to change toolchain versions (though perhaps this is not the most intuitive method)
-TOOLCHAIN_BASE="gcc-arm-none-eabi-4_9-2015q3-20150921"
+TOOLCHAIN_BASE="gcc-arm-none-eabi-4_9-2015q3-20150921" ciao come va
 
 # Parse useful information from the toolchain string
 
