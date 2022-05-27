@@ -8,11 +8,13 @@
   - Lettura dei sensori (giroscopio, GPS, accelerometro)
   - Hardware
   - Funzioni di trasferimento
+  - Documentazione
+  - Test
 
 ## Documentazione
 - Documentare il processo di creazione
   - Creazione diagramma di classi
-  - Tecnoligie coinvolte
+  - Tecnologie coinvolte
   - Duscussione sui calcoli matematici coinvolti
   - Analisi dell'andamento del projetto
 
@@ -22,7 +24,7 @@
   - Ogni cosa deve essere documentata
   - Ogni problema deve essere documentato
     - Deve essere aperta una issue su git che espone il problema
-    - La soluzione al problema deve essere collegata alla issue su git con una bleve discussione su come è stata risolta
+    - La soluzione al problema deve essere collegata alla issue su git con una breve discussione 
   - Ogni nuova scoperta deve essere documentata nella wiki del projetto
   - Importante dare credito ai lavori a cui si fa riferimento 
 
@@ -32,7 +34,9 @@
   - Il codice deve essere più semplice possibile, se non è possibile deve essere spiegato tramite commenti
   - Ogni funzione deve essere documentata nella wiki del progetto
   - Il codice deve essere scritto utilizzando il software STM32CubeIDE 
-  
+  - Il codece deve comprendere i test necessari al corretto funzionamento 
+  - Deve essere presente un sistema di CI per compilare ogni commit relativo al codice 
+   
 - Hardware
   - Deve essere realizzata una versione di test che non comprende un PCB
   - Deve essere realizzata una versione in un PCB tramite il programma KiCad 
