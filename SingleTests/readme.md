@@ -14,3 +14,12 @@
 ## CodeStyleTest
 - Test relativi al code style
 - Utilizzo del comando astyle
+
+## ToolChainDownloadTest
+- Bisogna sistemare il download della giusta toolchain per linux
+    - Impossibile utilizzare la toolchain siccome non è compatibile con x86 
+    - Sistemare l'URL di download
+    - Togliere la funzione di salvataggio del file tar nella cartella utente/.env
+    - Aggiungere la possibilità di sceglire il path dove estrarre la toolchain
+    
+    
