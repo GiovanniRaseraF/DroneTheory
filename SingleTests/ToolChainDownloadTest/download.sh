@@ -11,28 +11,26 @@
 
 # Toolchain base string
 # Set this to change toolchain versions (though perhaps this is not the most intuitive method)
-TOOLCHAIN_BASE="gcc-arm-none-eabi-4_9-2015q3-20150921"
+TOOLCHAIN_BASE="gcc-arm-none-eabi-10.3-2021.10-x86_64"
 
 # Parse useful information from the toolchain string
+TOOLCHAIN_VERSION_MAJOR=10
+TOOLCHAIN_VERSION_MINOR=3
+TOOLCHAIN_YEAR=2021
+TOOLCHAIN_MONTH=10
 
-if ! [[ $TOOLCHAIN_BASE =~ gcc-arm-none-eabi-([0-9])_([0-9])-([0-9]{4})q([0-4])-([0-9]{8}) ]]; then
-	echo "Invalid base toolchain string"
-	return
-fi
-
-TOOLCHAIN_VERSION_MAJOR=${BASH_REMATCH[1]}
-TOOLCHAIN_VERSION_MINOR=${BASH_REMATCH[2]}
-TOOLCHAIN_YEAR=${BASH_REMATCH[3]}
-TOOLCHAIN_QUARTER=${BASH_REMATCH[4]}
-TOOLCHAIN_DATE=${BASH_REMATCH[5]}
+echo $TOOLCHAIN_VERSION_MAJOR
+echo $TOOLCHAIN_VERSION_MINOR
+echo $TOOLCHAIN_YEAR
+echo $TOOLCHAIN_MONTH
 
 # Toolchain base URL
-# example: https://launchpad.net/gcc-arm-embedded/4.9/4.9-2015-q1-update/+download/gcc-arm-none-eabi-4_9-2015q1-20150306-win32.zip
-TOOLCHAIN_ADDR="https://launchpad.net/gcc-arm-embedded/${TOOLCHAIN_VERSION_MAJOR}.${TOOLCHAIN_VERSION_MINOR}/${TOOLCHAIN_VERSION_MAJOR}.${TOOLCHAIN_VERSION_MINOR}-${TOOLCHAIN_YEAR}-q${TOOLCHAIN_QUARTER}-update/+download/"
+# example: https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2
+TOOLCHAIN_ADDR="https://developer.arm.com/-/media/Files/downloads/gnu-rm/${TOOLCHAIN_VERSION_MAJOR}.${TOOLCHAIN_VERSION_MINOR}-${TOOLCHAIN_YEAR}.${TOOLCHAIN_MONTH}/"
 
 # Toolchain folder name
 # This must match that of the extracted archive
-TOOLCHAIN_LOC=gcc-arm-none-eabi-${TOOLCHAIN_VERSION_MAJOR}_${TOOLCHAIN_VERSION_MINOR}-${TOOLCHAIN_YEAR}q${TOOLCHAIN_QUARTER}
+TOOLCHAIN_LOC=gcc-arm-none-eabi-${TOOLCHAIN_VERSION_MAJOR}.${TOOLCHAIN_VERSION_MINOR}-${TOOLCHAIN_YEAR}.${TOOLCHAIN_MONTH}-x86_64-linux.tar.bz2
 
 WORKDIR=`pwd`
 TOOLDIR="$WORKDIR/.env"
