@@ -41,3 +41,13 @@
   - Deve essere realizzata una versione di test che non comprende un PCB
   - Deve essere realizzata una versione in un PCB tramite il programma KiCad 
   - Deve essere incluso ogni pdf o link al pdf che descrive ogni componente che viene utilizzato 
+
+- Software Utilizzati
+    - Devono essere open-source o almeno non avere licenze di nessun tipo
+    - KiCad per il design PCB
+    - VSCode per la scrittura del codice 
+    - ToolChain arm 
+    - Dia per il design di diagrammi
+    - Project Libre per gestione progetto
+    - Git per il versioning
+    - STM32CubeIDE per l'aiuto sulle librerie e il debugging  
