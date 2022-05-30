@@ -11,19 +11,14 @@
 
 # Toolchain base string
 # Set this to change toolchain versions (though perhaps this is not the most intuitive method)
-TOOLCHAIN_BASE="gcc-arm-none-eabi-10.3-2021.10-x86_64"
+TOOLCHAIN_BASE="gcc-arm-none-eabi-10.3-2021.10"
 
 # Parse useful information from the toolchain string
 TOOLCHAIN_VERSION_MAJOR=10
 TOOLCHAIN_VERSION_MINOR=3
 TOOLCHAIN_YEAR=2021
 TOOLCHAIN_MONTH=10
-
-echo $TOOLCHAIN_VERSION_MAJOR
-echo $TOOLCHAIN_VERSION_MINOR
-echo $TOOLCHAIN_YEAR
-echo $TOOLCHAIN_MONTH
-
+TOOLCHAIN_ARCHITECTURE=x86_64
 # Toolchain base URL
 # example: https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2
 TOOLCHAIN_ADDR="https://developer.arm.com/-/media/Files/downloads/gnu-rm/${TOOLCHAIN_VERSION_MAJOR}.${TOOLCHAIN_VERSION_MINOR}-${TOOLCHAIN_YEAR}.${TOOLCHAIN_MONTH}/"
@@ -61,7 +56,7 @@ if [ "$(uname)" == "Darwin" ]; then
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # Do something under Linux platform
     OS="LINUX"
-    TOOLCHAIN_FILE="$TOOLCHAIN_BASE-linux.tar.bz2"
+    TOOLCHAIN_FILE="$TOOLCHAIN_BASE$TOOLCHAIN_ARCHITECTURE-linux.tar.bz2"
     TOOLCHAIN_DL="$TOOLCHAIN_ADDR$TOOLCHAIN_FILE"
 
 elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
