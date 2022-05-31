@@ -38,9 +38,7 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_EXTENSIONS ON)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-
-main_sources(COMMON_SRC main.c)
-
-add_executable(hello main.c)
-
+set(LINKER_SCRIPT "STM32F446RETX_FLASH.ld")
+set(CMAKE_EXE_LINKER_FLAGS "-T ${LINKER_SCRIPT}")
+set_target_properties(${TARGET_NAME} PROPERTIES LINK_DEPENDS ${LINKER_SCRIPT})
+add_executable(test  main.c )

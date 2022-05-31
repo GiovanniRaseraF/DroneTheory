@@ -22,6 +22,23 @@ startup_stm32f10x_md_gcc.s
 *.map
 *.list
 
+*/cmake/*
+*/dev/*
+*/downloads/*
+*/tools/*
+
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
 cov-int*
 /build/
 /obj/
