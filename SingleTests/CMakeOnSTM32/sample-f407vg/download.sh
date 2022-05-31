@@ -56,7 +56,7 @@ if [ "$(uname)" == "Darwin" ]; then
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # Do something under Linux platform
     OS="LINUX"
-    TOOLCHAIN_FILE="$TOOLCHAIN_BASE$TOOLCHAIN_ARCHITECTURE-linux.tar.bz2"
+    TOOLCHAIN_FILE="$TOOLCHAIN_BASE-$TOOLCHAIN_ARCHITECTURE-linux.tar.bz2"
     TOOLCHAIN_DL="$TOOLCHAIN_ADDR$TOOLCHAIN_FILE"
 
 elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
