@@ -1,5 +1,20 @@
 # Test dei singoli componenti Harware e Software
 
+## CMakeOnSTM32
+- E' stata creato un file cmake che permette di compilare i file di stm32
+- Tutto viene integrato con un file make che permette di scaricare la toolchain per arm
+- Per ora funziona su macOS e LinuxWSL 
+
+## CodeStyleTest
+- Test relativi al code style
+- Utilizzo del comando astyle
+
+## CPPArmCompilationTest
+- Test di compilazione arm tramite file cmake
+### Scoperte
+- Deve essere creato un file cmake che funzioni diversamente e che sia più facile
+- E' stato usato quello presente in CMakeOnSTM32
+
 ## STM32CubeIDETest
 - Vengono eseguiti i test di compilazione tramite una generica toolchain allinterno di sistemi operativi windows e mac
 ### Scoperte
@@ -11,10 +26,6 @@
 ## CITest
 - Test relativi a CI 
   
-## CodeStyleTest
-- Test relativi al code style
-- Utilizzo del comando astyle
-
 ## ToolChainDownloadTest
 - Bisogna sistemare il download della giusta toolchain per linux
     - Impossibile utilizzare la toolchain siccome non è compatibile con x86 
