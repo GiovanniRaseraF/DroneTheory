@@ -98,19 +98,27 @@ int main(void)
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     int counter = 0;
+    char buffer = "Ciao come stai io sto bene";
 
     while (1) {
 
         char Test[30]; //Data to send
-        int n = 0;
+		int n = 0;
 
-        n = sprintf(Test, "Hello Giovanni %d\n\r", counter);
+
+        n = sprintf(Test, "Hello Giovanni %d\n\r", sizeof(Test));
         counter++;
 
-        HAL_UART_Transmit(&huart2, Test, sizeof(Test), n);// Sending in normal mode
+        HAL_UART_Transmit(&huart2, Test, sizeof(Test), 10);// Sending in normal mode
         HAL_Delay(1000);
 
         HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+
+		HAL_UART_Receive_IT(&huart2, &buffer, 20);
+
+        HAL_UART_Transmit(&huart2, buffer, 20, 10);// Sending in normal mode
+        HAL_Delay(1000);
+
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */
