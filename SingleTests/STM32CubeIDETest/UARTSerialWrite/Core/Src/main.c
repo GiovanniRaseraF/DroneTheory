@@ -44,7 +44,7 @@ UART_HandleTypeDef huart2;
 UART_HandleTypeDef huart3;
 
 /* USER CODE BEGIN PV */
-
+char buffer[50] = {0};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -58,7 +58,10 @@ static void MX_USART3_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+	HAL_UART_Receive_IT(&huart2, buffer, 20);
+}
 /* USER CODE END 0 */
 
 /**
@@ -98,7 +101,6 @@ int main(void)
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     int counter = 0;
-    char buffer = "Ciao come stai io sto bene";
 
     while (1) {
 
@@ -114,7 +116,7 @@ int main(void)
 
         HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
 
-		HAL_UART_Receive_IT(&huart2, &buffer, 20);
+		HAL_UART_Receive_IT(&huart2, buffer, 20);
 
         HAL_UART_Transmit(&huart2, buffer, 20, 10);// Sending in normal mode
         HAL_Delay(1000);
