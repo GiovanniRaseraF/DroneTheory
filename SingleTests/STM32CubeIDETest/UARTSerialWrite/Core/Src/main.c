@@ -61,11 +61,9 @@ static void MX_USART3_UART_Init(void);
 /* USER CODE BEGIN 0 */
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
-    if (newDataRead) {
-        HAL_UART_Transmit(&huart2, buffer, strlen(buffer), 100);
-        HAL_UART_Receive_IT(&huart2, buffer, 20);
-        newDataRead = 0;
-    }
+	HAL_UART_Transmit(&huart2, buffer, strlen(buffer), 100);
+	HAL_UART_Receive_IT(&huart2, buffer, 20);
+	newDataRead = 0;
 }
 /* USER CODE END 0 */
 
@@ -116,10 +114,6 @@ int main(void)
         HAL_UART_Receive_IT(&huart2, buffer, 20);
         // HAL_Delay(1000);
 
-        if (!newDataRead) {
-            printf("%s\n", buffer);
-            newDataRead = 1;
-        }
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */
