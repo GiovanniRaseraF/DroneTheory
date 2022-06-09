@@ -18,3 +18,6 @@
 - [PWM](https://www.google.com/search?q=how+to+use+pwm+on+stm32&rlz=1C5CHFA_enIT954IT954&oq=how+to+use+pwm+on+stm32&aqs=chrome.0.69i59j0i546.6079j0j7&sourceid=chrome&ie=UTF-8#kpvalbx=__2OeYvPeIIW4sAfrhJ_ABQ23)
   - Lezione sull'utilizzo del protocollo PWM su stm32
 
+- [Collegamento FS-A8S](https://youtu.be/RERBbO7auhA)
+  - Collegamento cavi a OMNIBUSF4 e impostazioni
+
