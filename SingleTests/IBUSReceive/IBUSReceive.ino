@@ -19,24 +19,24 @@ void read_serial(void) {
     if (Serial.read() == 0x20 ) { // Start bit of frame
       uint8_t buffer[26];
       buffer[0] = 0x20;
-      
+
 
       uint8_t i;
       for (i = 1; i < 26; i++) {
         buffer[i] = Serial.read();
       }
-      
-      for (i = 0; i < 26; i++) {
-        Serial.print(buffer[i], HEX);
-        Serial.print(" ");  
-      }
-      
+
+      //      for (i = 0; i < 26; i++) {
+      //      Serial.print(buffer[i], HEX);
+      //    Serial.print(" ");
+      // }
+
       Serial.println();
 
-      if (frame_validation(buffer) == true) {
-        set_data(buffer);
-        return;
-      }
+      //if (frame_validation(buffer) == true) {
+      set_data(buffer);
+      return;
+      //}
     }
   } return;
 }

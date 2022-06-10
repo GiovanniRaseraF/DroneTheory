@@ -21,3 +21,6 @@
 - [Collegamento FS-A8S](https://youtu.be/RERBbO7auhA)
   - Collegamento cavi a OMNIBUSF4 e impostazioni
 
+- [Lettura PPM da radio trasmittente](https://github.com/dimag0g/PPM-reader)
+  - Lettura del segnale e dei canali
+
