@@ -14,3 +14,5 @@
 
 ## Schematica
 - file: [Schematica](./Schematica.jpeg)
+
+## Channels
