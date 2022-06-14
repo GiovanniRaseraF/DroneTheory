@@ -2,6 +2,8 @@
 
 #define RIGHT     1
 #define LEFT      2
+#define FARWARD   1
+#define BACKWARD  2
 #define MIN_STICK 1000
 #define MAX_STICK 2000
 
@@ -55,9 +57,6 @@ void setup()
 
 void loop()
 {
-    digitalWrite(backDir1_pin, HIGH);
-    digitalWrite(backDir2_pin, LOW);
-
     // Main task loop
     readRadio();
     displayRadio();
@@ -108,7 +107,22 @@ void writeToMotor()
             break;
     }
 
-    // Farward
+    // Farward or Backward
+    int nobAValue = chValue[VRA - 1];
+    int move = (nobAValue < 1500 ? BACKWARD : FARWARD);
+
+    switch(move){
+      case FARWARD:
+        digitalWrite(backDir1_pin, HIGH);
+        digitalWrite(backDir2_pin, LOW);
+        break;
+      case BACKWARD:
+        digitalWrite(backDir1_pin, LOW);
+        digitalWrite(backDir2_pin, HIGH);
+        break;
+     default:
+        break;
+    }
     analogWrite(backPower_pin, power);
 }
 
