@@ -1,30 +1,46 @@
 #include <PPMReader.h>
 
-#define AVANTI 3
+#define RIGHT 1
+#define LEFT 2
+#define MIN_STICK 1000
+#define MAX_STICK 2000
+
+#define MAX_BACK_MOTOR_POWER 200
+#define MAX_FRONT_MOTOR_POWER 150
 
 // Radio
 const byte interruptPin     = 3;
 const byte channelAmount    = 6;
-byte chValue[channelAmount] = {0};
+int chValue[channelAmount] = {0};
 PPMReader ppm(interruptPin, channelAmount);
+
+// PPM Channels
+const byte rightStick_LeftRight = 1;
+const byte rightStick_UpDown    = 2;
+const byte leftStick_UpDown     = 3;
+const byte leftStick_LeftRight  = 4;
+const byte VRA                  = 5;
+const byte VRB                  = 6;
 
 // Pin Motori
 byte backPower_pin    = 5;
 byte backDir1_pin     = 6;
 byte backDir2_pin     = 7;
 
-byte frontPower_pin   = 8;
-byte frontDir1_pin    = 8;
-byte frontDir2_pin    = 10;
+byte frontPower_pin   = 10;
+byte frontDir1_pin    = 9;
+byte frontDir2_pin    = 8;
 
 // Func
 void printHeaderChannels();
 void readRadio();
+void displayRadio();
+void writeToMotor();
 
 void setup() {
   // Serial init
   Serial.begin(115200);
-  //printHeaderChannels();
+  printHeaderChannels();
 
   // Motors
   pinMode(backPower_pin,      OUTPUT);
@@ -41,7 +57,64 @@ void loop() {
   digitalWrite(backDir2_pin, LOW);
 
   readRadio();
+  displayRadio();
+  writeToMotor();
+  
   delay(10);
+}
+
+// 1000 -*- 2000
+void writeToMotor(){
+  const int minToLeft = 1300;
+  const int minToRight = 1700;
+  
+  int powerFarward = chValue[leftStick_UpDown - 1];
+  int power = map(powerFarward, MIN_STICK, MAX_STICK, 0, MAX_BACK_MOTOR_POWER);
+  int directionValue = chValue[rightStick_LeftRight - 1];
+
+  int direction = (directionValue < minToLeft ? LEFT : 0);
+  direction     = (directionValue > minToRight ? RIGHT : direction);
+  int directionPower = 0;
+
+  switch(direction){
+    case LEFT:
+    directionPower = MAX_FRONT_MOTOR_POWER - map(directionValue, MIN_STICK, minToLeft, 0, MAX_FRONT_MOTOR_POWER);
+    
+    digitalWrite(frontDir1_pin, HIGH);
+    digitalWrite(frontDir2_pin, LOW);
+
+    analogWrite(frontPower_pin, directionPower);
+    break;
+    case RIGHT:
+    directionPower = map(directionValue, minToRight, MAX_STICK, 0, MAX_FRONT_MOTOR_POWER);
+    
+    digitalWrite(frontDir1_pin, LOW);
+    digitalWrite(frontDir2_pin, HIGH);
+
+    analogWrite(frontPower_pin, directionPower);
+    break;
+    default:
+    directionPower = 0;
+
+    digitalWrite(frontDir1_pin, LOW);
+    digitalWrite(frontDir2_pin, LOW);
+
+    analogWrite(frontPower_pin, directionPower);
+    break;
+  }
+
+  // Farward
+  analogWrite(backPower_pin, power);
+}
+
+void displayRadio(){
+  // Display
+  for (byte channel = 1; channel <= channelAmount; ++channel) {
+      unsigned value = chValue[channel - 1];
+      Serial.print(value);
+      Serial.print(" ");
+  }
+  Serial.println();
 }
 
 void readRadio(){
@@ -51,58 +124,10 @@ void readRadio(){
 
         chValue[channel - 1] = value;
   }
-
-  // Display
-  for (byte channel = 1; channel <= channelAmount; ++channel) {
-      unsigned value = chValue[channel - 1];
-      
-      if(channel == AVANTI){
-        int power = map(value, 1000, 2000, 0, 50);
-        analogWrite(backPower_pin, power); 
-
-        //Serial.print(power);
-        //Serial.print(" ");
-      }
-
-      if(channel == 2){
-        int power = map(value, 1000, 2000, 0, 50);
-        Serial.print(power);
-        /*
-        if(value < 1300 && value >= 1000){
-          // Destra 
-          digitalWrite(frontDir1_pin, LOW);
-          digitalWrite(frontDir2_pin, HIGH);
-          
-          int powerTork = 30 - map(value, 1000, 1300, 0, 30);
-          analogWrite(frontPower_pin, powerTork);
-
-          Serial.print(powerTork);
-        }else if (value > 1700 && value <= 2000){
-          // Sinistra
-          digitalWrite(frontDir1_pin, HIGH);
-          digitalWrite(frontDir2_pin, LOW);
-          
-          int powerTork = map(value, 1700, 2000, 0, 30);
-          analogWrite(frontPower_pin, powerTork);
-          
-          Serial.print(powerTork);
-        }else{
-          Serial.print(0);
-        }
-        */
-      }      
-  }
-  Serial.println();
 }
 
 // Func Implementation
 void printHeaderChannels(){
   //while(!Serial){}
-  
-  for (byte channel = 1; channel <= channelAmount; ++channel) {
-    Serial.print(channel);
-    Serial.print(" ");
-  }
-  
-  Serial.println();
+  Serial.println("rightStick_LeftRight rightStick_UpDown leftStick_UpDown leftStick_LeftRight VRA VRB ");
 }
