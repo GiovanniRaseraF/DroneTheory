@@ -16,6 +16,7 @@
 - file: [Schematica](./Schematica.jpeg)
 
 ## Canali
+```c
 // PPM Channels
 const byte rightStick_LeftRight = 1;
 const byte rightStick_UpDown    = 2;
@@ -23,3 +24,4 @@ const byte leftStick_UpDown     = 3;
 const byte leftStick_LeftRight  = 4;
 const byte VRA                  = 5;
 const byte VRB                  = 6;
+```
