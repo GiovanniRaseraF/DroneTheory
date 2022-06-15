@@ -1,4 +1,5 @@
 #include <PPMReader.h>
+#include "SimplePPM.h"
 
 #define RIGHT     1
 #define LEFT      2
