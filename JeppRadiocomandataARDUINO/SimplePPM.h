@@ -2,6 +2,8 @@
 // that allows to smooth the input 
 // Author: Giovanni Rasera - https://www.github.com/GiovanniRaseraF
 #pragma once
+#include "stdint.h"
+#include <Arduino.h>
 
 #define MAX_CHANNELS 6
 
@@ -23,35 +25,25 @@ class SPPM{
         VRB                 
     };
 
-    enum state{
-        NO_CONN              = 0,
-        READY_FOR_HEADER        ,
-        RECEIVING_HEADER        ,
-        READY_FOR_CH_VALUE      ,
-        RECEIVING_CH_VALUE
-    };
-    int currentState = NO_CONN;
-
     // protected:
     // Stores all channel values
-    int rawChValue[MAX_CHANNELS] = {0};
+    uint32_t rawChValue[MAX_CHANNELS] = {0};
 
     // private:
     // Interrups
     int interruptPin = 3;   // 3 by default
-    uint32_t prevTimeRISING = 0;
-    uint32_t prevTimeFALLING = 0;
-
+    uint32_t prevInterruptMicros = 0;    
     static SPPM *sppm; // necessary to have interrupts
 
+    int countCh = 0;
     uint32_t rawValue = 0;
 
     // Functions
     SPPM();
     ~SPPM();
 
-    static void SPPM_ISR_RISING();
-    static void SPPM_ISR_FALLING();
+    static void SPPM_ISR();
 
-    void changeState(uint32_t accurTimeMillis, int direction);
+    void changeState(uint32_t accurTimeMillis);
+    uint32_t getValue(int channel);
 };

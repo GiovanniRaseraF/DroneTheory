@@ -1,37 +1,46 @@
 #include "SimplePPM.h"
 #include "assert.h"
 
-// Interrupts
-static void SPPM_ISR_FALLING(){
-    assert(SPPM::sppm != NULL);
-    
-    uint32_t accurTime = millis();
-    SPPM::sppm->changeState(accurTime, FALLING);
-    SPPM::sppm->prevTimeFALLING = accurTime;
-    attachInterrupt(digitalPinToInterrupt(SPPM::sppm->interruptPin), SPPM_ISR_RISING, RISING);
-}
+SPPM *SPPM::sppm;
 
-static void SPPM_ISR_RISING(){
-    assert(SPPM::sppm != NULL);
+// Interrupts
+void SPPM::SPPM_ISR(){
+    //assert(SPPM::sppm != NULL);
     
-    uint32_t accurTime = millis();
-    SPPM::sppm->changeState(accurTime, RISING);
-    SPPM::sppm->prevTimeRISING = accurTime;
-    attachInterrupt(digitalPinToInterrupt(SPPM::sppm->interruptPin), SPPM_ISR_FALLING, FALLING); 
+    uint32_t accurTime = micros();
+    SPPM::sppm->changeState(accurTime);
+    SPPM::sppm->prevInterruptMicros = accurTime;
 }
 
 SPPM::SPPM(){
     // Whait for first rising
+    pinMode(interruptPin, INPUT_PULLUP);
     SPPM::sppm = this;
-    attachInterrupt(digitalPinToInterrupt(this->interruptPin), SPPM_ISR_RISING, RISING);
-
-    noInterrupts();
-    this->currentState = NO_CONN;
-    interrupts();
+    attachInterrupt(digitalPinToInterrupt(this->interruptPin), SPPM_ISR, CHANGE);
 }
 
-void SPPM::changeState(uint32_t accurTimeMillis, int direction){
-    if(direction == FALLING){
-        this->rawValue = accurTimeMillis - this->prevTimeRISING;
+SPPM::~SPPM(){
+    detachInterrupt(digitalPinToInterrupt(this->interruptPin));
+}
+
+void SPPM::changeState(uint32_t accurTimeMicros){
+    uint32_t deltaTime = accurTimeMicros - this->prevInterruptMicros;
+
+    if(deltaTime >= PWM_PULSE_MAX){
+        this->countCh = 0;
+    }else if(deltaTime > PWM_PULSE_MIN && deltaTime < PWM_PULSE_MAX && countCh < MAX_CHANNELS){
+        this->rawChValue[this->countCh] = constrain(deltaTime, MIN_STICK, MAX_STICK);
+        this->countCh++;
     }
+}
+
+uint32_t SPPM::getValue(int channel){
+    //assert(channel >= 0 && channel < MAX_CHANNELS);
+    channel = constrain(channel, 0, MAX_CHANNELS);
+
+    noInterrupts();
+    uint32_t ret = this->rawChValue[channel];
+    interrupts();
+
+    return ret;
 }
