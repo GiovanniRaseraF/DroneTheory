@@ -2,6 +2,8 @@
 // that allows to smooth the input 
 // Author: Giovanni Rasera - https://www.github.com/GiovanniRaseraF
 #pragma once
+#include "stdint.h"
+#include <Arduino.h>
 
 #define MAX_CHANNELS 6
 
@@ -44,6 +46,7 @@ class SPPM{
 
     static SPPM *sppm; // necessary to have interrupts
 
+    int count = 0;
     uint32_t rawValue = 0;
 
     // Functions
