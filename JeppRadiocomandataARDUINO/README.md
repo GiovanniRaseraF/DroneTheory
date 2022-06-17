@@ -1,7 +1,7 @@
 # Jeep Radiocomandata
 ## Componenti
 - Arduino Nano, ATmega328P (Old Bootloader)
-- L298N Modulo, ESC per motori CC
+- L298N Modulo, ESC per motori CC, [DataScheet](https://www.st.com/resource/en/datasheet/l298.pdf)
 - Radio FlySky
 - Ricevente FlySky FS-A8S
 - Motori 10V CC
