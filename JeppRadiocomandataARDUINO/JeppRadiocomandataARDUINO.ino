@@ -1,4 +1,4 @@
-#include <PPMReader.h>
+#include "SimplePPM.h"
 
 #define RIGHT     1
 #define LEFT      2
@@ -14,7 +14,7 @@
 const byte interruptPin     = 3;
 const byte channelAmount    = 6;
 int chValue[channelAmount]  = {0};
-PPMReader ppm(interruptPin, channelAmount);
+SPPM sppm(interruptPin);
 
 // PPM Channels
 const byte rightStick_LeftRight = 1;
@@ -141,7 +141,7 @@ void readRadio()
 {
     // Read
     for (byte channel = 1; channel <= channelAmount; ++channel) {
-        unsigned value = ppm.latestValidChannelValue(channel, 0);
+        unsigned value = sppm.getValue(channel);
 
         chValue[channel - 1] = value;
     }

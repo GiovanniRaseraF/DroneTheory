@@ -21,6 +21,7 @@ SPPM::SPPM(int pin){
 
 SPPM::~SPPM(){
     detachInterrupt(digitalPinToInterrupt(this->interruptPin));
+    this->sppm = NULL;
 }
 
 void SPPM::changeState(uint32_t accurTimeMicros){
