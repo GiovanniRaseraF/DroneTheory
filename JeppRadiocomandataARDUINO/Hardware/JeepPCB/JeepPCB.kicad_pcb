@@ -796,7 +796,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "/Users/giovannirasera/Desktop/Transistor L298N.step"
+    (model "${KIPRJMOD}/3DComponents/Transistor L298N.step"
       (offset (xyz 9.02 7.5 11))
       (scale (xyz 0.7 0.9 1))
       (rotate (xyz -90 0 90))
