@@ -68,7 +68,7 @@ void loop()
 // 1000 -*- 2000
 void writeToMotor()
 {
-    const int minToLeft = 1300;
+    const int minToLeft  = 1300;
     const int minToRight = 1700;
 
     // Settig direction and power for motors
