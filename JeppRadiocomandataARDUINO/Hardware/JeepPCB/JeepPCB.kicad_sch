@@ -955,6 +955,7 @@
     )
   )
 
+
   (junction (at 131.826 19.304) (diameter 0) (color 0 0 0 0)
     (uuid 17556981-c114-475c-a4a8-2fb12ca68c94)
   )
@@ -2146,7 +2147,7 @@
     (property "Value" "10K" (id 1) (at 119.38 92.9639 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_2816_7142Metric_Pad3.20x4.45mm_HandSolder" (id 2) (at 115.316 91.694 90)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 115.316 91.694 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 117.094 91.694 0)
@@ -2249,7 +2250,7 @@
       (reference "MotorFET1") (unit 1) (value "L298N") (footprint "Package_TO_SOT_THT:TO-220-15_P2.54x2.54mm_StaggerOdd_Lead4.58mm_Vertical")
     )
     (path "/f34be8ea-310f-4294-8838-87279f7f3ffa"
-      (reference "R1") (unit 1) (value "10K") (footprint "Resistor_SMD:R_2816_7142Metric_Pad3.20x4.45mm_HandSolder")
+      (reference "R1") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/c751029c-0ca6-4cd0-8725-946b9af36995"
       (reference "U1") (unit 1) (value "ATmega328P-A") (footprint "Package_QFP:TQFP-32_7x7mm_P0.8mm")
