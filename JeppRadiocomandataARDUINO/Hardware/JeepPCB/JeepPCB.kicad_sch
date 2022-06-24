@@ -854,7 +854,6 @@
     )
   )
 
-
   (junction (at 131.826 19.304) (diameter 0) (color 0 0 0 0)
     (uuid 17556981-c114-475c-a4a8-2fb12ca68c94)
   )
@@ -2003,7 +2002,7 @@
   (symbol (lib_id "Regulator_Linear:KA78M05_TO252") (at 48.006 49.022 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid eb166358-be61-4056-b159-d0aba37bef05)
-    (property "Reference" "REG_LIN1" (id 0) (at 47.752 45.466 0))
+    (property "Reference" "RL1" (id 0) (at 47.752 45.466 0))
     (property "Value" "KA78M05_TO252" (id 1) (at 48.006 44.196 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2149,7 +2148,7 @@
       (reference "R1") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/eb166358-be61-4056-b159-d0aba37bef05"
-      (reference "REG_LIN1") (unit 1) (value "KA78M05_TO252") (footprint "Package_TO_SOT_SMD:TO-252-2")
+      (reference "RL1") (unit 1) (value "KA78M05_TO252") (footprint "Package_TO_SOT_SMD:TO-252-2")
     )
     (path "/c751029c-0ca6-4cd0-8725-946b9af36995"
       (reference "U1") (unit 1) (value "ATmega328P-A") (footprint "Package_QFP:TQFP-32_7x7mm_P0.8mm")
