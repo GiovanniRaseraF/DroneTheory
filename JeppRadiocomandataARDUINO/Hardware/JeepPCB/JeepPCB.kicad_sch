@@ -854,7 +854,6 @@
     )
   )
 
-
   (junction (at 131.826 19.304) (diameter 0) (color 0 0 0 0)
     (uuid 17556981-c114-475c-a4a8-2fb12ca68c94)
   )
@@ -1437,7 +1436,7 @@
     (property "Value" "220uF" (id 1) (at 27.94 58.2929 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_Elec_4x5.8" (id 2) (at 24.638 57.658 0)
+    (property "Footprint" "Capacitor_SMD:C_Elec_8x10.2" (id 2) (at 24.638 57.658 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 24.638 57.658 0)
@@ -1833,7 +1832,7 @@
     (property "Value" "Radio" (id 1) (at 155.448 146.5579 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" (id 2) (at 154.178 145.288 0)
+    (property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical" (id 2) (at 154.178 145.288 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 154.178 145.288 0)
@@ -1902,7 +1901,7 @@
     (property "Value" "220uF" (id 1) (at 59.69 58.2929 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_Elec_4x5.8" (id 2) (at 55.626 57.658 0)
+    (property "Footprint" "Capacitor_SMD:C_Elec_8x10.2" (id 2) (at 55.626 57.658 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 55.626 57.658 0)
@@ -2095,10 +2094,10 @@
       (reference "#PWR0104") (unit 1) (value "VCC") (footprint "")
     )
     (path "/d009009f-95c2-4e0c-9edf-2151737e2628"
-      (reference "C1") (unit 1) (value "220uF") (footprint "Capacitor_SMD:C_Elec_4x5.8")
+      (reference "C1") (unit 1) (value "220uF") (footprint "Capacitor_SMD:C_Elec_8x10.2")
     )
     (path "/042c4ba9-5cce-4d89-8fe4-3f031769c4bf"
-      (reference "C2") (unit 1) (value "220uF") (footprint "Capacitor_SMD:C_Elec_4x5.8")
+      (reference "C2") (unit 1) (value "220uF") (footprint "Capacitor_SMD:C_Elec_8x10.2")
     )
     (path "/81c0867b-d819-4bc6-8926-eccf1eda061e"
       (reference "C3") (unit 1) (value "22pF") (footprint "Capacitor_Tantalum_SMD:CP_EIA-1608-10_AVX-L_Pad1.25x1.05mm_HandSolder")
@@ -2131,7 +2130,7 @@
       (reference "D8") (unit 1) (value "1N4007") (footprint "Diode_SMD:D_MicroMELF_Handsoldering")
     )
     (path "/c6ff950c-fe73-4725-a0da-2103c5405644"
-      (reference "J1") (unit 1) (value "Radio") (footprint "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical")
+      (reference "J1") (unit 1) (value "Radio") (footprint "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical")
     )
     (path "/09740267-1ffb-4c95-a882-d84ec24f41f1"
       (reference "J_BACK1") (unit 1) (value "Screw_Terminal_01x02") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal")
