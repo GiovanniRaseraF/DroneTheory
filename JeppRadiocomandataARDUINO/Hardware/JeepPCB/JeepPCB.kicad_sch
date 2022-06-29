@@ -6,9 +6,9 @@
 
   (title_block
     (title "Jepp Radiocomandata")
-    (date "2022-06-21")
+    (date "2022-06-29")
     (rev "1.0.0")
-    (comment 1 "Giovanni Rasera")
+    (company "Giovanni Rasera")
   )
 
   (lib_symbols
