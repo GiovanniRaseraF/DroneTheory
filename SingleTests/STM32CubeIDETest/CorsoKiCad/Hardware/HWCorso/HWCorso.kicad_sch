@@ -3390,7 +3390,7 @@
     (uuid 2a63d06b-6465-4f67-a91b-0d27b5ae0d4f)
     (property "Reference" "J4" (id 0) (at 216.662 70.612 0))
     (property "Value" "SWD_CONN" (id 1) (at 216.916 87.884 0))
-    (property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_2x05_P1.27mm_Vertical_SMD" (id 2) (at 215.392 78.486 0)
+    (property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" (id 2) (at 215.392 78.486 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 215.392 78.486 0)
@@ -4876,7 +4876,7 @@
       (reference "J3") (unit 1) (value "I2C_CONN") (footprint "Connector_Molex:Molex_PicoBlade_53048-0410_1x04_P1.25mm_Horizontal")
     )
     (path "/2a63d06b-6465-4f67-a91b-0d27b5ae0d4f"
-      (reference "J4") (unit 1) (value "SWD_CONN") (footprint "Connector_PinSocket_1.27mm:PinSocket_2x05_P1.27mm_Vertical_SMD")
+      (reference "J4") (unit 1) (value "SWD_CONN") (footprint "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD")
     )
     (path "/fc3aa937-a42c-45b5-b421-c4e0cc21ed87"
       (reference "J5") (unit 1) (value "USART6_CONN") (footprint "Connector_Molex:Molex_PicoBlade_53048-0410_1x04_P1.25mm_Horizontal")
