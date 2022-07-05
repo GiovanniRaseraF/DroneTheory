@@ -1,5 +1,10 @@
+## Author: Giovanni Rasera
+## Git: https://github.com/GiovanniRaseraF
+
 import xml.etree.ElementTree as ET
-tree = ET.parse('./HWCorso/HWCorso.xml')
+import sys
+
+tree = ET.parse(sys.argv[1])
 root = tree.getroot()
 components = root[1]
 
