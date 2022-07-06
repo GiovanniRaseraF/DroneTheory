@@ -48,18 +48,7 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        },
-        {
-          "gap": 0.2032,
-          "via_gap": 0.2032,
-          "width": 0.261112
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -123,24 +112,8 @@
         "solder_mask_min_width": 0.0,
         "use_height_for_length_calcs": true
       },
-      "track_widths": [
-        0.0,
-        0.3,
-        0.4,
-        0.5,
-        0.75,
-        1.0
-      ],
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        },
-        {
-          "diameter": 0.8,
-          "drill": 0.4
-        }
-      ],
+      "track_widths": [],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -360,7 +333,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "HWCorso.kicad_pro",
+    "filename": "DroneHardware.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -400,7 +373,7 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 0,
+    "annotate_start_num": 200,
     "drawing": {
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
@@ -439,12 +412,16 @@
   },
   "sheets": [
     [
-      "7c0efdd3-b5a0-45ba-acaa-a09041705242",
+      "07282201-ab4e-44cd-8ccb-24fb7b2c6656",
       ""
     ],
     [
-      "9e55af3e-fa23-495c-8670-6b09d2123573",
-      "Gyro"
+      "fac2416d-8672-4658-a71a-a5344f2b57b2",
+      "Power, Start: 100"
+    ],
+    [
+      "42652d3b-3524-4596-9beb-48af5be6a704",
+      "Connectivity, Start: 200"
     ]
   ],
   "text_variables": {}
