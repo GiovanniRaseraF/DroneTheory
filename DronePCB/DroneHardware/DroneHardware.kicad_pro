@@ -373,7 +373,7 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 200,
+    "annotate_start_num": 300,
     "drawing": {
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
@@ -422,6 +422,14 @@
     [
       "42652d3b-3524-4596-9beb-48af5be6a704",
       "Connectivity, Start: 200"
+    ],
+    [
+      "63015f4b-8a17-4294-93a7-af5b4ee98b2c",
+      "MCU, Start: 0"
+    ],
+    [
+      "403edd5a-fe01-4e55-b25f-63afe54fdb23",
+      "Gyro, Start: 300"
     ]
   ],
   "text_variables": {}
