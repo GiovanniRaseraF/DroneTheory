@@ -278,7 +278,7 @@
       (reference "H204") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_3.2mm_M3")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/47ce324f-c01a-42f8-965c-04bb09eb82eb"
-      (reference "J201") (unit 1) (value "USB_B_Micro") (footprint "Connector_USB:USB_Micro-AB_Molex_47590-0001")
+      (reference "J201") (unit 1) (value "USB_B_Micro") (footprint "Connector_USB:USB_Micro-B_Molex-105017-0001")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/df79b2fa-e435-4ba6-9b5b-cf688f134cb2"
       (reference "J202") (unit 1) (value "BATTERY") (footprint "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical")

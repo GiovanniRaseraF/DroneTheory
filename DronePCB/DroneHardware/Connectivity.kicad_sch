@@ -1123,7 +1123,7 @@
     (uuid 47ce324f-c01a-42f8-965c-04bb09eb82eb)
     (property "Reference" "J201" (id 0) (at 82.804 83.82 0))
     (property "Value" "USB_B_Micro" (id 1) (at 82.804 86.36 0))
-    (property "Footprint" "Connector_USB:USB_Micro-AB_Molex_47590-0001" (id 2) (at 86.614 98.552 0)
+    (property "Footprint" "Connector_USB:USB_Micro-B_Molex-105017-0001" (id 2) (at 86.614 98.552 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 86.614 98.552 0)
