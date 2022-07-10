@@ -1073,7 +1073,7 @@
   (symbol (lib_id "Device:D_Schottky_Small") (at 45.466 78.486 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 01d7812f-1e3b-455e-8551-508d9f72fc7d)
-    (property "Reference" "D101" (id 0) (at 50.038 78.486 90)
+    (property "Reference" "D101" (id 0) (at 46.736 84.582 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "B5819W" (id 1) (at 49.276 82.55 90)
