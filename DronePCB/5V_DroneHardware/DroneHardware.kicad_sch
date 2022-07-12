@@ -124,16 +124,22 @@
     (path "/fac2416d-8672-4658-a71a-a5344f2b57b2/5ea1e8cf-95c7-40e5-bbac-73af72295098"
       (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
     )
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/a3386693-bf11-471d-859f-da442e43a7e7"
+      (reference "#PWR0106") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/8ff72bbe-8f86-4dff-92bb-aca7936d7e77"
+      (reference "#PWR0107") (unit 1) (value "GND") (footprint "")
+    )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/bab87bbf-bcf0-4910-a2e2-45dada8500be"
       (reference "#PWR0201") (unit 1) (value "GND") (footprint "")
     )
-    (path "/42652d3b-3524-4596-9beb-48af5be6a704/1f83a3c6-0dab-48dc-9608-e040588c63a1"
-      (reference "#PWR0202") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/42652d3b-3524-4596-9beb-48af5be6a704/0f991694-a35d-490b-8bc3-4c6cd2418dd8"
-      (reference "#PWR0203") (unit 1) (value "+12V") (footprint "")
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/b8a24c90-02d7-42eb-aab2-f8a13c94cc9a"
+      (reference "#PWR0202") (unit 1) (value "+5V") (footprint "")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/b8e9c05f-b31c-489b-ba6d-d07b1c2c9bd6"
+      (reference "#PWR0203") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/1f83a3c6-0dab-48dc-9608-e040588c63a1"
       (reference "#PWR0204") (unit 1) (value "GND") (footprint "")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/3df163ee-9cfc-45a4-aae6-dc3a0f3a881e"
@@ -243,6 +249,9 @@
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/f8428474-45a1-42fe-97c5-2fc83e7e3114"
       (reference "J203") (unit 1) (value "SWD_CONN") (footprint "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD")
+    )
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/499bd8a0-10e0-479e-b581-cf510ff60c26"
+      (reference "J204") (unit 1) (value "Conn_01x06_Male") (footprint "Connector_Hirose:Hirose_DF52-6S-0.8H_1x06-1MP_P0.80mm_Horizontal")
     )
     (path "/63015f4b-8a17-4294-93a7-af5b4ee98b2c/0b0c621d-6496-40fe-9795-6909e901d4e1"
       (reference "L1") (unit 1) (value "39n") (footprint "Inductor_SMD:L_0402_1005Metric")
