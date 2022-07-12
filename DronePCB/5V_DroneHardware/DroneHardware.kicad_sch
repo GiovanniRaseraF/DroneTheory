@@ -125,31 +125,25 @@
       (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/bab87bbf-bcf0-4910-a2e2-45dada8500be"
-      (reference "#PWR0306") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0201") (unit 1) (value "GND") (footprint "")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/1f83a3c6-0dab-48dc-9608-e040588c63a1"
-      (reference "#PWR0307") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0202") (unit 1) (value "GND") (footprint "")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/0f991694-a35d-490b-8bc3-4c6cd2418dd8"
-      (reference "#PWR0308") (unit 1) (value "+12V") (footprint "")
+      (reference "#PWR0203") (unit 1) (value "+12V") (footprint "")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/b8e9c05f-b31c-489b-ba6d-d07b1c2c9bd6"
-      (reference "#PWR0309") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0204") (unit 1) (value "GND") (footprint "")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/3df163ee-9cfc-45a4-aae6-dc3a0f3a881e"
-      (reference "#PWR0310") (unit 1) (value "+5V") (footprint "")
+      (reference "#PWR0205") (unit 1) (value "+5V") (footprint "")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/07e39188-fb13-4290-a412-1195ade593ea"
-      (reference "#PWR0311") (unit 1) (value "+3.3V") (footprint "")
+      (reference "#PWR0206") (unit 1) (value "+3.3V") (footprint "")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/792211fc-2501-4b60-bdba-36b68b44ecac"
-      (reference "#PWR0312") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/42652d3b-3524-4596-9beb-48af5be6a704/db9a2aae-aaf4-43e4-8def-ef4d2a3cc0d9"
-      (reference "#PWR0313") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/42652d3b-3524-4596-9beb-48af5be6a704/6a143ba5-8c16-4ed3-8983-c4754996964d"
-      (reference "#PWR0314") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0207") (unit 1) (value "GND") (footprint "")
     )
     (path "/403edd5a-fe01-4e55-b25f-63afe54fdb23/1aed0de1-6349-49ac-9789-92288dd874ba"
       (reference "#PWR0328") (unit 1) (value "+3.3V") (footprint "")
@@ -230,25 +224,25 @@
       (reference "FB101") (unit 1) (value "600 @ 600MHz") (footprint "Inductor_SMD:L_0805_2012Metric")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/9924efdd-891b-4f4a-a18a-a87cf1ae5674"
-      (reference "H301") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_3.2mm_M3")
+      (reference "H201") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_3.2mm_M3")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/eeb4a994-2f50-418c-8217-a7e06910bad0"
-      (reference "H302") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_3.2mm_M3")
+      (reference "H202") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_3.2mm_M3")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/eafb8f8e-3ee5-4c1d-a140-ed03032e7331"
-      (reference "H303") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_3.2mm_M3")
+      (reference "H203") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_3.2mm_M3")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/3a838131-7602-4fa6-9aa3-52eb50ed1972"
-      (reference "H304") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_3.2mm_M3")
+      (reference "H204") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_3.2mm_M3")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/47ce324f-c01a-42f8-965c-04bb09eb82eb"
-      (reference "J301") (unit 1) (value "USB_B_Micro") (footprint "Connector_USB:USB_Micro-B_Molex-105017-0001")
+      (reference "J201") (unit 1) (value "USB_B_Micro") (footprint "Connector_USB:USB_Micro-B_Molex-105017-0001")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/df79b2fa-e435-4ba6-9b5b-cf688f134cb2"
-      (reference "J302") (unit 1) (value "BATTERY") (footprint "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical")
+      (reference "J202") (unit 1) (value "BATTERY") (footprint "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/f8428474-45a1-42fe-97c5-2fc83e7e3114"
-      (reference "J303") (unit 1) (value "SWD_CONN") (footprint "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD")
+      (reference "J203") (unit 1) (value "SWD_CONN") (footprint "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD")
     )
     (path "/63015f4b-8a17-4294-93a7-af5b4ee98b2c/0b0c621d-6496-40fe-9795-6909e901d4e1"
       (reference "L1") (unit 1) (value "39n") (footprint "Inductor_SMD:L_0402_1005Metric")
@@ -265,14 +259,17 @@
     (path "/fac2416d-8672-4658-a71a-a5344f2b57b2/e9ab3bb1-2f84-4a7b-bf28-c0147459946f"
       (reference "R101") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/2264939c-5347-4a53-a0a2-b1f84c64d1f5"
+      (reference "R201") (unit 1) (value "22") (footprint "Resistor_SMD:R_0201_0603Metric")
+    )
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/592b657e-c52f-4378-bcbf-749af5de9f96"
+      (reference "R202") (unit 1) (value "22") (footprint "Resistor_SMD:R_0201_0603Metric")
+    )
     (path "/63015f4b-8a17-4294-93a7-af5b4ee98b2c/612b7c3c-7fc6-4f0e-a0e5-a69849b3cde2"
-      (reference "SW1") (unit 1) (value "SW_SPDT") (footprint "Button_Switch_SMD:SW_SPDT_PCM12")
+      (reference "SW1") (unit 1) (value "SW_SPDT") (footprint "Button_Switch_SMD:SW_SPST_B3U-1000P")
     )
     (path "/63015f4b-8a17-4294-93a7-af5b4ee98b2c/f598adbb-9edc-4154-8a40-f8286ded7878"
       (reference "U1") (unit 1) (value "STM32F405RGT6") (footprint "Package_QFP:LQFP-64_10x10mm_P0.5mm")
-    )
-    (path "/42652d3b-3524-4596-9beb-48af5be6a704/3f54d4af-777c-4700-af3a-9be4842c5d4b"
-      (reference "U301") (unit 1) (value "USBLC6-2SC6") (footprint "Package_TO_SOT_SMD:SOT-23-6")
     )
     (path "/403edd5a-fe01-4e55-b25f-63afe54fdb23/2e93cc8d-fa4e-40ec-abc8-6d512e625388"
       (reference "U303") (unit 1) (value "MPU-6000") (footprint "Sensor_Motion:InvenSense_QFN-24_4x4mm_P0.5mm")
