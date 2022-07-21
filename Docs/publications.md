@@ -24,3 +24,6 @@
 - [Lettura PPM da radio trasmittente](https://github.com/dimag0g/PPM-reader)
   - Lettura del segnale e dei canali
 
+- [ExpressLRS](https://github.com/ExpressLRS/ExpressLRS)
+  - Protocollo di comunicazione open-source
+
