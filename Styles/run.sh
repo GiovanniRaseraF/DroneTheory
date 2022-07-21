@@ -1,1 +1,0 @@
-astyle --style=kr --indent=spaces=4 --pad-header --pad-oper --align-pointer=name --align-reference=none --convert-tabs --indent-switches  --min-conditional-indent=1 --preserve-date --suffix=none -v --mode=c $1
