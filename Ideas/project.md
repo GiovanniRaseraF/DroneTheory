@@ -51,3 +51,12 @@
     - Project Libre per gestione progetto
     - Git per il versioning
     - STM32CubeIDE per l'aiuto sulle librerie e il debugging  
+
+- Argomenti
+  - LoRa
+  - STM32
+  - Betaflight 
+  - INav
+  - PX4
+  - ExpressLRS
+  - FrSky
