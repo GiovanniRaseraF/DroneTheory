@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Vespin")
+    (date "2022-07-23")
+    (rev "1.0")
+    (company "Giovanni Rasera")
+  )
+
   (lib_symbols
   )
 
@@ -124,12 +131,6 @@
     (path "/fac2416d-8672-4658-a71a-a5344f2b57b2/5ea1e8cf-95c7-40e5-bbac-73af72295098"
       (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
     )
-    (path "/42652d3b-3524-4596-9beb-48af5be6a704/a3386693-bf11-471d-859f-da442e43a7e7"
-      (reference "#PWR0106") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/42652d3b-3524-4596-9beb-48af5be6a704/8ff72bbe-8f86-4dff-92bb-aca7936d7e77"
-      (reference "#PWR0107") (unit 1) (value "GND") (footprint "")
-    )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/bab87bbf-bcf0-4910-a2e2-45dada8500be"
       (reference "#PWR0201") (unit 1) (value "GND") (footprint "")
     )
@@ -150,6 +151,18 @@
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/792211fc-2501-4b60-bdba-36b68b44ecac"
       (reference "#PWR0207") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/42256968-aa04-488c-b33a-ef4308983ba4"
+      (reference "#PWR0208") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/a3386693-bf11-471d-859f-da442e43a7e7"
+      (reference "#PWR0209") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/8ff72bbe-8f86-4dff-92bb-aca7936d7e77"
+      (reference "#PWR0210") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/7f07f3a1-3c6b-4f9a-9315-8cdf98557005"
+      (reference "#PWR0211") (unit 1) (value "GND") (footprint "")
     )
     (path "/403edd5a-fe01-4e55-b25f-63afe54fdb23/1aed0de1-6349-49ac-9789-92288dd874ba"
       (reference "#PWR0328") (unit 1) (value "+3.3V") (footprint "")
@@ -252,6 +265,27 @@
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/499bd8a0-10e0-479e-b581-cf510ff60c26"
       (reference "J204") (unit 1) (value "Conn_01x06_Male") (footprint "Connector_Hirose:Hirose_DF52-6S-0.8H_1x06-1MP_P0.80mm_Horizontal")
+    )
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/a088ec0b-107a-4864-b6f6-982a3907c0c3"
+      (reference "J205") (unit 1) (value "Conn_01x03_Female") (footprint "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical")
+    )
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/3afd52e7-c877-471f-8e48-fd856d7af2b2"
+      (reference "J206") (unit 1) (value "Conn_01x03_Female") (footprint "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical")
+    )
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/a70525e6-65e7-4d15-9806-7b6876278cd4"
+      (reference "J207") (unit 1) (value "Conn_01x03_Female") (footprint "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical")
+    )
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/7cbf1fff-1fd2-4c4c-810a-8d865b5c6369"
+      (reference "J208") (unit 1) (value "Conn_01x03_Female") (footprint "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical")
+    )
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/3a64a6ca-e7c2-4850-bbd4-0656ede8b4b8"
+      (reference "J209") (unit 1) (value "Conn_01x03_Female") (footprint "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical")
+    )
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/5e37a6e9-53c5-46c3-a81f-f627e60922d2"
+      (reference "J210") (unit 1) (value "Conn_01x03_Female") (footprint "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical")
+    )
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/4f7ff169-acfc-434b-b735-51ce07228bcd"
+      (reference "J211") (unit 1) (value "Conn_01x03_Female") (footprint "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical")
     )
     (path "/63015f4b-8a17-4294-93a7-af5b4ee98b2c/0b0c621d-6496-40fe-9795-6909e901d4e1"
       (reference "L1") (unit 1) (value "39n") (footprint "Inductor_SMD:L_0402_1005Metric")
