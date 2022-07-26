@@ -11,4 +11,4 @@
     - Creazione del BOM
     - Creazione della posizione dei componenti
     - Creazione della scheda di alimentazione semparata
-
+    - Capire che componente è il L8V di OMNIBUSF4
