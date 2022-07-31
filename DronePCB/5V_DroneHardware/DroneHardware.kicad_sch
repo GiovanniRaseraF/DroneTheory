@@ -131,6 +131,9 @@
     (path "/fac2416d-8672-4658-a71a-a5344f2b57b2/5ea1e8cf-95c7-40e5-bbac-73af72295098"
       (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
     )
+    (path "/fac2416d-8672-4658-a71a-a5344f2b57b2/01a4cd75-6f8c-4863-b322-de8b858be64d"
+      (reference "#PWR0106") (unit 1) (value "GND") (footprint "")
+    )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/bab87bbf-bcf0-4910-a2e2-45dada8500be"
       (reference "#PWR0201") (unit 1) (value "GND") (footprint "")
     )
@@ -253,6 +256,12 @@
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/3a838131-7602-4fa6-9aa3-52eb50ed1972"
       (reference "H204") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_3.2mm_M3")
+    )
+    (path "/fac2416d-8672-4658-a71a-a5344f2b57b2/6426ecff-ef11-49b4-8f71-552a34412cc3"
+      (reference "J101") (unit 1) (value "+5V") (footprint "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical")
+    )
+    (path "/fac2416d-8672-4658-a71a-a5344f2b57b2/6bc83778-e8f2-4745-ab8b-d1c805624f61"
+      (reference "J102") (unit 1) (value "GND") (footprint "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Vertical")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/47ce324f-c01a-42f8-965c-04bb09eb82eb"
       (reference "J201") (unit 1) (value "USB_B_Micro") (footprint "Connector_USB:USB_Micro-B_Molex-105017-0001")
