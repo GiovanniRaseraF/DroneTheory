@@ -219,7 +219,7 @@
       (reference "C101") (unit 1) (value "0u47") (footprint "Capacitor_SMD:C_1206_3216Metric")
     )
     (path "/fac2416d-8672-4658-a71a-a5344f2b57b2/45892e0d-c94b-46d2-b20f-e3e86c7d94b2"
-      (reference "C102") (unit 1) (value "33u") (footprint "Capacitor_SMD:C_0201_0603Metric")
+      (reference "C102") (unit 1) (value "33u") (footprint "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J")
     )
     (path "/403edd5a-fe01-4e55-b25f-63afe54fdb23/9f330a85-1344-4512-9f76-3a47ca68c619"
       (reference "C315") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0402_1005Metric")
