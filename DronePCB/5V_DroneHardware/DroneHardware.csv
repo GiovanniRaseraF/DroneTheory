@@ -25,7 +25,7 @@ Comment,Designator,Footprint,LCSC
 "10K","R1","Resistor_SMD:R_0402_1005Metric",""
 "1K","R101","Resistor_SMD:R_0603_1608Metric",""
 "47","R2","Resistor_SMD:R_0402_1005Metric",""
-"22","R201,R202","Resistor_SMD:R_0201_0603Metric",""
+"22","R201,R202","Resistor_SMD:R_0402_1005Metric",""
 "1K5","R3","Resistor_SMD:R_0603_1608Metric",""
 "SW_SPDT","SW1","Button_Switch_SMD:SW_SPST_B3U-1000P",""
 "STM32F405RGT6","U1","Package_QFP:LQFP-64_10x10mm_P0.5mm",""

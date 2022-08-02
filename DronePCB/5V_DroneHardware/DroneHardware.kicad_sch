@@ -312,10 +312,10 @@
       (reference "R101") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/42652d3b-3524-4596-9beb-48af5be6a704/2264939c-5347-4a53-a0a2-b1f84c64d1f5"
-      (reference "R201") (unit 1) (value "22") (footprint "Resistor_SMD:R_0201_0603Metric")
+      (reference "R201") (unit 1) (value "22") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
-    (path "/42652d3b-3524-4596-9beb-48af5be6a704/592b657e-c52f-4378-bcbf-749af5de9f96"
-      (reference "R202") (unit 1) (value "22") (footprint "Resistor_SMD:R_0201_0603Metric")
+    (path "/42652d3b-3524-4596-9beb-48af5be6a704/21c0d4e0-0ebf-4f78-ba64-7632d6e15b6f"
+      (reference "R202") (unit 1) (value "22") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/63015f4b-8a17-4294-93a7-af5b4ee98b2c/612b7c3c-7fc6-4f0e-a0e5-a69849b3cde2"
       (reference "SW1") (unit 1) (value "SW_SPDT") (footprint "Button_Switch_SMD:SW_SPST_B3U-1000P")

@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>C:\Users\Giovanni\repos\DroneTheory\DronePCB\5V_DroneHardware\DroneHardware.kicad_sch</source>
-    <date>01/08/2022 15:59:23</date>
+    <date>02/08/2022 12:07:53</date>
     <tool>Eeschema (6.0.5)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -367,12 +367,12 @@
     </comp>
     <comp ref="R201">
       <value>22</value>
-      <footprint>Resistor_SMD:R_0201_0603Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
-        <field name="LCSC Part #">C270355</field>
+        <field name="LCSC Part #">C25092</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC Part #" value="C270355"/>
+      <property name="LCSC Part #" value="C25092"/>
       <property name="Sheetname" value="Connectivity, Start: 200"/>
       <property name="Sheetfile" value="Connectivity.kicad_sch"/>
       <sheetpath names="/Connectivity, Start: 200/" tstamps="/42652d3b-3524-4596-9beb-48af5be6a704/"/>
@@ -380,16 +380,16 @@
     </comp>
     <comp ref="R202">
       <value>22</value>
-      <footprint>Resistor_SMD:R_0201_0603Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
-        <field name="LCSC Part #">C270355</field>
+        <field name="LCSC Part #">C25092</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC Part #" value="C270355"/>
+      <property name="LCSC Part #" value="C25092"/>
       <property name="Sheetname" value="Connectivity, Start: 200"/>
       <property name="Sheetfile" value="Connectivity.kicad_sch"/>
       <sheetpath names="/Connectivity, Start: 200/" tstamps="/42652d3b-3524-4596-9beb-48af5be6a704/"/>
-      <tstamps>592b657e-c52f-4378-bcbf-749af5de9f96</tstamps>
+      <tstamps>21c0d4e0-0ebf-4f78-ba64-7632d6e15b6f</tstamps>
     </comp>
     <comp ref="C1">
       <value>2u2</value>
@@ -1420,14 +1420,14 @@
     </net>
     <net code="41" name="USB_CONN_D-">
       <node ref="J201" pin="2" pinfunction="D-" pintype="bidirectional"/>
-      <node ref="R202" pin="2" pintype="passive"/>
+      <node ref="R202" pin="1" pintype="passive"/>
     </net>
     <net code="42" name="USB_D+">
       <node ref="R201" pin="2" pintype="passive"/>
       <node ref="U1" pin="45" pinfunction="PA12" pintype="bidirectional"/>
     </net>
     <net code="43" name="USB_D-">
-      <node ref="R202" pin="1" pintype="passive"/>
+      <node ref="R202" pin="2" pintype="passive"/>
       <node ref="U1" pin="44" pinfunction="PA11" pintype="bidirectional"/>
     </net>
     <net code="44" name="unconnected-(J201-Pad4)">
