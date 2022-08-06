@@ -60,3 +60,4 @@
   - PX4
   - ExpressLRS
   - FrSky
+  - ArduPilot

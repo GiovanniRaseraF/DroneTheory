@@ -27,3 +27,5 @@
 - [ExpressLRS](https://github.com/ExpressLRS/ExpressLRS)
   - Protocollo di comunicazione open-source
 
+- [ArduPilot](https://ardupilot.org/)
+  - Firmware di volo
