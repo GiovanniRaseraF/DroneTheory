@@ -1,6 +1,6 @@
 Designator, Comment, Footprint, LCSC
 "C101", "0u47", "Capacitor_SMD:C_1206_3216Metric", "C13585"
-"C102", "33u", "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J", "C347532"
+"C102", "33u", "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J", "C128344"
 "D101", "B5819W", "Diode_SMD:D_SOD-123", "C8598"
 "D102", "RED", "LED_SMD:LED_0603_1608Metric", "C2286"
 "F101", "250mA", "Fuse:Fuse_0603_1608Metric", "C151137"
