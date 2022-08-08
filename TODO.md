@@ -16,3 +16,4 @@
     - Capire che componente è il L8V di OMNIBUSF4
     
     - Utilizzo di ArduPilot
+    - Studiare ArduPilot
