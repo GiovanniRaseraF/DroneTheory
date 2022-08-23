@@ -7,3 +7,7 @@ Testing di ArduPilot
   - Creazione di un esempio con hal.scheduler->register_timer_process(..)
   - RTOS 
   - DevCall Seguita 2022-08-16
+
+Possibile Erasmus
+  - Tetra Drones Ltd
+  - Nordic Unmanned AS
