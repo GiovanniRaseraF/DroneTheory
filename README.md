@@ -11,3 +11,5 @@ Testing di ArduPilot
 Possibile Erasmus
   - Tetra Drones Ltd
   - Nordic Unmanned AS
+  - KVS Technologies AS
+  - Sevendof AS
