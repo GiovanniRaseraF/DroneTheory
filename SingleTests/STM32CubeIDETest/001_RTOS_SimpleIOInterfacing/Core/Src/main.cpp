@@ -21,6 +21,7 @@
 #include "cmsis_os.h"
 #include "usart.h"
 #include "gpio.h"
+#include <vector>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -66,6 +67,107 @@ void blink_green_led(void *pvParameters)
 		vTaskDelayUntil(&TaskTimeStamp, 500);
 	}
 }
+
+void blink_red_led(void *pvParameters)
+{
+	TickType_t TaskTimeStamp;
+	TaskTimeStamp = xTaskGetTickCount();
+
+	for(;;){
+		HAL_GPIO_TogglePin(LDred_GPIO_Port, LDred_Pin);
+		vTaskDelayUntil(&TaskTimeStamp, 100);
+	}
+}
+
+void periodic_prime_compute(void *pvParameters){
+	std::vector<int> v;
+	v.push_back(2);
+	int current = 3;
+
+	for(;;){
+		bool prime = true;
+		HAL_GPIO_WritePin(LDred_GPIO_Port, LDred_Pin, GPIO_PIN_RESET);
+
+		for(auto p : v){
+			if(current % p == 0)
+				prime = false;
+		}
+
+		if(prime){
+			v.push_back(current);
+			//blink
+			HAL_GPIO_WritePin(LDred_GPIO_Port, LDred_Pin, GPIO_PIN_RESET);
+			HAL_GPIO_TogglePin(LDred_GPIO_Port, LDred_Pin);
+			vTaskDelay(300);
+			HAL_GPIO_TogglePin(LDred_GPIO_Port, LDred_Pin);
+		}
+
+		current += 2;
+	}
+}
+
+void periodic_prime_compute_1(void *pvParameters){
+	std::vector<int> v;
+	v.push_back(2);
+	int current = 3;
+
+	for(;;){
+		bool prime = true;
+
+		for(auto p : v){
+			if(current % p == 0)
+				prime = false;
+		}
+
+		if(prime){
+			v.push_back(current);
+		}
+
+		current += 2;
+	}
+}
+
+void periodic_prime_compute_2(void *pvParameters){
+	std::vector<int> v;
+	v.push_back(2);
+	int current = 3;
+
+	for(;;){
+		bool prime = true;
+
+		for(auto p : v){
+			if(current % p == 0)
+				prime = false;
+		}
+
+		if(prime){
+			v.push_back(current);
+		}
+
+		current += 2;
+	}
+}
+
+void periodic_prime_compute_3(void *pvParameters){
+	std::vector<int> v;
+	v.push_back(2);
+	int current = 3;
+
+	for(;;){
+		bool prime = true;
+
+		for(auto p : v){
+			if(current % p == 0)
+				prime = false;
+		}
+
+		if(prime){
+			v.push_back(current);
+		}
+
+		current += 2;
+	}
+}
 /* USER CODE END 0 */
 
 /**
@@ -99,17 +201,30 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
   //HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-  TaskHandle_t xHandle = NULL;
-  BaseType_t xReturned = xTaskCreate(blink_green_led, "blink green", 200, (void *)1, 4, &xHandle);
-  // task created NOT PERIODIC
+  TaskHandle_t xHandle_green_led = NULL;
+  TaskHandle_t xHandle_red_led = NULL;
+  TaskHandle_t xHandle_1 = NULL;
+  TaskHandle_t xHandle_2 = NULL;
+
+  BaseType_t xReturned = xTaskCreate(blink_green_led, "blink green", 200, (void *)1, 4, &xHandle_green_led);
+  // task created PERIODIC
   if (xReturned == pdPASS);else;
 
+  xReturned = xTaskCreate(periodic_prime_compute, "prime", 200, (void *)1, 3, &xHandle_red_led);
+  // second task created PERIODIC
+  if (xReturned == pdPASS);else;
 
+  xReturned = xTaskCreate(periodic_prime_compute_1, "prime_1", 200, (void *)1, 1, &xHandle_1);
+  // second task created PERIODIC
+  if (xReturned == pdPASS);else;
+
+  xReturned = xTaskCreate(periodic_prime_compute_2, "prime_2", 200, (void *)1, 1, &xHandle_2);
+  // second task created PERIODIC
+  if (xReturned == pdPASS);else;
 
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */
-  MX_FREERTOS_Init();
 
   /* Start scheduler */
   osKernelStart();
