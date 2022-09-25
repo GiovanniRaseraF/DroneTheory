@@ -12,3 +12,5 @@
 - Spostare la USB nella parte destra del processore in modo da non farla accavallare
 - Connettere il giroscopio MPU6050, siccome costa 5 Euro su Amazon
 
+- Passaggio ESP32 per comodità
+
