@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "LM3940IMP-3.3_NOPB")(type "Legacy")(uri "${KIPRJMOD}/Footprints/LM3940IMP-3.3_NOPB.lib")(options "")(descr ""))
+  (lib (name "lm3940")(type "Legacy")(uri "${KIPRJMOD}/Footprints/LM3940IMP-3.3_NOPB.lib")(options "")(descr ""))
+)
